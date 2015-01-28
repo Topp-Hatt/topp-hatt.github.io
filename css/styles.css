@@ -4,6 +4,37 @@ p {
 	font-family: font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 }
 
+/* Bio */
+article {
+	background-color: red;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+header {
+	width: 100%;
+
+}
+
+.col1,
+.col2,
+footer {
+	width: 30%;
+	float: left;
+	background-color: yellow;
+
+}
+
+.col2 {
+	width: 70%;
+	background-color: green;
+}
+
+footer {
+	width: 100%;
+	color: blue;
+}
+
 /* Nav */
 
 nav a:link {
