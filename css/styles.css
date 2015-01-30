@@ -1,63 +1,130 @@
 /* Global */
 
-p {
-	font-family: font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+body {
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	background-color: #75A1B2;
 }
 
-/* Bio */
-article {
-	background-color: red;
-	margin: 0 auto;
-	width: 1000px;
-}
-
-header {
-	width: 100%;
-
-}
-
-.col1,
-.col2,
-footer {
-	width: 30%;
-	float: left;
-	background-color: yellow;
-
-}
-
-.col2 {
-	width: 70%;
-	background-color: green;
-}
-
-footer {
-	width: 100%;
-	color: blue;
+.content {
+	max-width: 1200px;
+	overflow: auto;
+	margin: 20px auto;
+	background-color: #FFF;
+	padding: 20px;
+	border-radius: 15px;
 }
 
 /* Nav */
 
-nav a:link {
-  color: #4aa2d9;
-  text-decoration: none;
+.page-links {
+	overflow: auto;
+	width: 30%;
+	float: left;
+	position: relative;
+	z-index: 10;
 }
 
-nav a:visited {
+.page-links li {
+	padding: 5px 15px 5px 0;
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+}
+
+.page-links li a {
+	color: #75A1B2;
+    text-decoration: none;
+}
+.page-links li a:hover {
 	color: #f2994b;
 }
 
-nav a:hover {
-	color: #123159;
+.page-links li a:active {
+	color: #75A1B2;
 }
 
-nav a:active {
-	color: #123159;
+.page-links ul {
+	padding: 0;
 }
 
-nav a:focus {
-	color: #123159;
+/* Bio */
+
+h1 {
+	text-align: center;
+	position: relative;
+	left: -15%;
+	z-index: 1;
+	padding-top: 5px;
 }
 
-img {
-	width: 100px;
+.bio {
+	overflow: auto;
+	width: 85%;
+	margin: 30px auto;
+	padding-bottom: 5px;
+}
+
+img.bio-pic {
+	float: left;
+	border-radius: 7px;
+	box-shadow: 2px 2px 5px #333;
+	margin-right: 20px;
+}
+
+/* Background */
+
+.background {
+	width: 85%;
+	margin: 30px auto;
+	overflow: auto;
+	border-top: 2px #75A1B2 dotted;
+	border-bottom: 2px #75A1B2 dotted;
+}
+.col-1, .col-2{
+	width: 42%;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* Contact */
+
+footer {
+	clear: both;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+	.page-links {
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.page-links ul {
+		text-align: center;
+		}
+	.page-links li {
+		padding: 5px 10px;
+		}
+	h1 {
+		left: 0;
+	}
+	.col-1, .col-2 {
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	.page-links {
+		width: 100%;
+	}
+	.bio, .background {
+		width: 100%;
+	}
+	
 }
