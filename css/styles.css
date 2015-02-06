@@ -1,8 +1,20 @@
 /* Global */
 
+h1,
+h2,
+h3 {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
 body {
-	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
 	background-color: #75A1B2;
+	background-image: url(../img/felt.png);
+}
+
+p {
+	margin: 20px 0;
 }
 
 .content {
@@ -10,6 +22,7 @@ body {
 	overflow: auto;
 	margin: 20px auto;
 	background-color: #FFF;
+	background-image: url(../img/paper_3.png);
 	padding: 20px;
 	border-radius: 15px;
 }
@@ -66,9 +79,11 @@ h1 {
 
 img.bio-pic {
 	float: left;
+	position: relative;
+	top: 25px;
 	border-radius: 7px;
 	box-shadow: 2px 2px 5px #333;
-	margin-right: 20px;
+	margin: 0 20px 25px 0;
 }
 
 /* Background */
@@ -87,14 +102,18 @@ img.bio-pic {
 	padding: 5px;
 }
 
+li {
+	margin: 10px 0;
+}
+
 /* Contact */
 
 footer {
 	clear: both;
 }
 
-/* Layout for Style Tile
-Feel free to change */
+/* Style Tile */
+
 section {
 	margin: 20px 0;
 }
@@ -115,15 +134,31 @@ section {
 	width: 50px;
 }
  
-/* Set Your Own Typography */
- 
- 
-/* Set Your Own Margin & Padding */
-h2, h3, p {
-	margin: 0;
+.color-1 {
+	background-color: #75A1B2;
+}
+
+.color-2 {
+	background-color: #f2994b;
+}
+
+.color-3 {
+	background-color: #FFF;
+}
+
+.pattern-1 {
+	background-image: url(../img/felt.png);
 }
  
-/* Clearfix - Oo Not Remove */
+ .pattern-2 {
+	background-image: url(../img/paper_3.png);
+ }
+
+ .pattern-3 {
+ 	background-color: #FFF;
+ }
+
+ /* Clearfix - Oo Not Remove */
 .clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 
 /* Media Queries */
@@ -157,7 +192,7 @@ h2, h3, p {
 	.page-links {
 		width: 100%;
 	}
-	.bio, .background {
+	.container, .wrapper {
 		width: 100%;
 	}
 	
