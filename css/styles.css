@@ -11,6 +11,8 @@ body {
 	font-size: 16px;
 	background-color: #75A1B2;
 	background-image: url(../img/felt.png);
+	background-repeat: repeat;
+	background-position: top left;
 }
 
 p {
@@ -23,6 +25,8 @@ p {
 	margin: 20px auto;
 	background-color: #FFF;
 	background-image: url(../img/paper_3.png);
+	background-repeat: repeat;
+	background-position: top left;
 	padding: 20px;
 	border-radius: 15px;
 }
