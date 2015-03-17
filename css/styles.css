@@ -6,6 +6,10 @@ h3 {
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
+header {
+	border-bottom: 2px #75A1B2 dotted;
+}
+
 body {
 	font-family: 'Merriweather', serif;
 	font-size: 16px;
@@ -165,7 +169,29 @@ section {
  /* Clearfix - Oo Not Remove */
 .clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 
+/* Gallery */
 
+.thumbnail {
+	width: 250px;
+	margin: 20px;
+	float: left;
+	position: relative;
+	background: transparent;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+
+.thumbnail img {
+	/*width: 200px;*/
+	height: 20%;
+	border: solid 1px;
+}
+
+/*.thumbnail img:target {
+	width: 100%;
+	height: 100%;*/
+
+}
 
 /* Media Queries */
 
