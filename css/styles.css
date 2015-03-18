@@ -71,17 +71,14 @@ p {
 /* Home */
 
 #banner {
-	width: 75%;
+	position: relative;
 	background-color: transparent;
-	/*padding-left: 25%;*/
 	margin: 20px auto;
+	text-align: center;
 	border-radius: 7px;
 }
 
-#banner-pic {
-	margin-left: 25%;
-}
-/* Animation made with coveloping{} */
+/* All animation's made with https://coveloping.com/tools/css-animation-generator */
 	.animated { 
     -webkit-animation-duration: 1s; 
     animation-duration: 1s; 
@@ -247,12 +244,11 @@ section {
 
 /* Gallery */
 
-/* Gallery */
-
 .gallery {
 	margin: 100px auto;
 	width: 85%;
 	overflow: visible;
+	border-bottom: 2px #75A1B2 dotted;
 }
 
 ul.gallery {
@@ -271,6 +267,7 @@ ul.gallery li {
 	margin: 15px 0;
 }
 
+/* Gallery and Lightbox code based upon code tutorial from http://tympanus.net/codrops/2011/12/26/css3-lightbox/*/
 .lightbox {
     /** Hide the lightbox */
     opacity: 0;
@@ -338,9 +335,11 @@ ul.gallery li {
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
+	
+/* Main */
 	.page-links {
 		float: none;
-		width: 50%;
+		width: 65%;
 		margin: 0 auto;
 	}
 
@@ -350,9 +349,12 @@ ul.gallery li {
 	.page-links li {
 		padding: 5px 10px;
 		}
+	
 	h1 {
 		left: 0;
 	}
+
+	/* Bio */
 	.col-1, .col-2 {
 		float: none;
 		width: 100%;
@@ -360,6 +362,11 @@ ul.gallery li {
 		margin: 0;
 	}
 
+	/* Gallery */
+	.my_image img {
+		width: 100%;
+		height: 75%;
+	}
 }
 
 @media only screen and (max-width: 640px) {
@@ -370,4 +377,15 @@ ul.gallery li {
 		width: 100%;
 	}
 	
+/* Index */
+
+	#banner img {
+		width: 50%;
+		height: 50%;
+	}
+
+.my_image img {
+		width: 100%;
+		height: 50%;
+
 }
